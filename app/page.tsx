@@ -37,7 +37,7 @@ export default function ResumePage() {
           <div className="flex justify-between items-start mb-6">
             <div>
               <h1 className="text-5xl font-bold mb-2">Wania Akram</h1>
-              <p className="text-xl text-slate-300">Fresh Graduate | Web Developer</p>
+              <p className="text-xl text-slate-300">Undergraduate | Web Developer</p>
             </div>
             <div className="flex gap-3">
               <button
