@@ -28,18 +28,18 @@ export default function ResumePage() {
 
   return (
     <main
-      className={`min-h-screen transition-colors duration-300 ${isDarkMode ? "bg-slate-950 text-white" : "bg-background text-foreground"}`}
+      className={`min-h-screen transition-colors duration-300 text-left ${isDarkMode ? "bg-slate-950 text-white" : "bg-background text-foreground"}`}
     >
       <header
-        className={`${isDarkMode ? "bg-slate-900" : "bg-gradient-to-r from-slate-900 to-slate-800"} text-white py-12 px-6 md:px-12`}
+        className={`${isDarkMode ? "bg-slate-900" : "bg-gradient-to-r from-slate-900 to-slate-800"} text-white py-12 px-6 md:px-12 text-left`}
       >
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-between items-start mb-6">
-            <div>
-              <h1 className="text-5xl font-bold mb-2">Wania Akram</h1>
-              <p className="text-xl text-slate-300">Undergraduate | Web Developer</p>
+        <div className="max-w-4xl mx-auto text-left">
+          <div className="flex justify-between items-start mb-6 text-left">
+            <div className="text-left">
+              <h1 className="text-5xl font-bold mb-2 text-left">Wania Akram</h1>
+              <p className="text-xl text-slate-300 text-left">Undergraduate | Web Developer</p>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 text-left">
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 transition"
@@ -59,16 +59,16 @@ export default function ResumePage() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-wrap gap-6 text-sm">
-            <a href="mailto:waniaakram777@gmail.com" className="flex items-center gap-2 hover:text-blue-400 transition">
+          <div className="flex flex-wrap gap-6 text-sm text-left">
+            <a href="mailto:waniaakram777@gmail.com" className="flex items-center gap-2 hover:text-blue-400 transition text-left">
               <Mail size={18} />
               waniaakram777@gmail.com
             </a>
-            <a href="tel:03322200290" className="flex items-center gap-2 hover:text-blue-400 transition">
+            <a href="tel:03322200290" className="flex items-center gap-2 hover:text-blue-400 transition text-left">
               <Phone size={18} />
               +92 332 2200290
             </a>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-left">
               <MapPin size={18} />
               Karachi, Pakistan
             </div>
@@ -76,137 +76,139 @@ export default function ResumePage() {
         </div>
       </header>
 
-      <div ref={resumeRef} className={`${isDarkMode ? "bg-slate-950" : "bg-background"}`}>
+      <div ref={resumeRef} className={`${isDarkMode ? "bg-slate-950" : "bg-background"} text-left`}>
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto px-6 md:px-12 py-12">
+        <div className="max-w-4xl mx-auto px-6 md:px-12 py-12 text-left">
           {/* Career Objective */}
-          <section className="mb-12">
+          <section className="mb-12 text-left">
             <h2
-              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               Career Objective
             </h2>
-            <p className={`text-lg leading-relaxed ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+            <p className={`text-lg leading-relaxed text-left ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
               To secure an employment opportunity with a progressive organization, where I can utilize my professional
               skills and intellectual capabilities on the growth of the organization.
             </p>
           </section>
 
           {/* Education */}
-          <section className="mb-12">
+          <section className="mb-12 text-left">
             <h2
-              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               Education
             </h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className={`text-xl font-semibold ${isDarkMode ? "text-white" : "text-slate-900"}`}>
+            <div className="space-y-6 text-left">
+              <div className="text-left">
+                <h3 className={`text-xl font-semibold text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}>
                   Intermediate
                 </h3>
-                <p className={isDarkMode ? "text-slate-400" : "text-slate-600"}>
+                <p className={`text-left ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
                   Khatoon-e-Pakistan Girls College, Karachi
                 </p>
               </div>
-              <div>
-                <h3 className={`text-xl font-semibold ${isDarkMode ? "text-white" : "text-slate-900"}`}>
+              <div className="text-left">
+                <h3 className={`text-xl font-semibold text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}>
                   Matriculation
                 </h3>
-                <p className={isDarkMode ? "text-slate-400" : "text-slate-600"}>The City School, Karachi</p>
+                <p className={`text-left ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
+                  The City School, Karachi
+                </p>
               </div>
             </div>
           </section>
 
           {/* Certifications */}
-          <section className="mb-12">
+          <section className="mb-12 text-left">
             <h2
-              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               Certifications
             </h2>
-            <div className={`${isDarkMode ? "bg-slate-800" : "bg-blue-50"} p-6 rounded-lg`}>
-              <h3 className={`text-lg font-semibold mb-2 ${isDarkMode ? "text-white" : "text-slate-900"}`}>
+            <div className={`${isDarkMode ? "bg-slate-800" : "bg-blue-50"} p-6 rounded-lg text-left`}>
+              <h3 className={`text-lg font-semibold mb-2 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}>
                 Artificial Intelligence, Web 3.0 and Metaverse
               </h3>
-              <p className={isDarkMode ? "text-slate-400" : "text-slate-600"}>
+              <p className={`text-left ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
                 Governor Sindh Initiative of IT (GIAIC) (Ongoing)
               </p>
-              <h3 className={`text-lg font-semibold mb-2 mt-4 ${isDarkMode ? "text-white" : "text-slate-900"}`}>
+              <h3 className={`text-lg font-semibold mb-2 mt-4 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}>
                 Certified Agentic and Robotic AI Engineering
               </h3>
-              <p className={isDarkMode ? "text-slate-400" : "text-slate-600"}>
+              <p className={`text-left ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
                 President Initiative of AI (PIAIC) (Ongoing)
               </p>
             </div>
           </section>
 
           {/* Skills */}
-          <section className="mb-12">
+          <section className="mb-12 text-left">
             <h2
-              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               Technical Skills
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div>
-                <h3 className={`font-semibold mb-3 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+              <div className="text-left">
+                <h3 className={`font-semibold mb-3 text-left ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
                   Frontend Development
                 </h3>
-                <ul className={`space-y-2 ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
-                  <li className="flex items-center gap-2">
+                <ul className={`space-y-2 text-left ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Proficient in HTML, CSS, JavaScript
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Experience with TypeScript
                   </li>
                 </ul>
               </div>
-              <div>
-                <h3 className={`font-semibold mb-3 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
+              <div className="text-left">
+                <h3 className={`font-semibold mb-3 text-left ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
                   Backend Development
                 </h3>
-                <ul className={`space-y-2 ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
-                  <li className="flex items-center gap-2">
+                <ul className={`space-y-2 text-left ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Experience with Node.js
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Modern Python
                   </li>
                 </ul>
               </div>
-              <div>
-                <h3 className={`font-semibold mb-3 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
+              <div className="text-left">
+                <h3 className={`font-semibold mb-3 text-left ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
                   AI & Prompt Engineering
                 </h3>
-                <ul className={`space-y-2 ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
-                  <li className="flex items-center gap-2">
+                <ul className={`space-y-2 text-left ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     OpenAI SDK Agents
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Prompt Engineering
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Context Engineering
                   </li>
                 </ul>
               </div>
-              <div>
-                <h3 className={`font-semibold mb-3 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
+              <div className="text-left">
+                <h3 className={`font-semibold mb-3 text-left ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}>
                   Core Competencies
                 </h3>
-                <ul className={`space-y-2 ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
-                  <li className="flex items-center gap-2">
+                <ul className={`space-y-2 text-left ${isDarkMode ? "text-slate-300" : "text-slate-700"}`}>
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Strong problem-solving and analytical skills
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2 text-left">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
                     Excellent communication and teamwork abilities
                   </li>
@@ -216,14 +218,14 @@ export default function ResumePage() {
           </section>
 
           {/* Experience */}
-          <section className="mb-12">
+          <section className="mb-12 text-left">
             <h2
-              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-500 text-left ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               Work Experience
             </h2>
-            <div className={`${isDarkMode ? "bg-slate-800" : "bg-slate-50"} p-8 rounded-lg text-center`}>
-              <p className={`text-lg ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
+            <div className={`${isDarkMode ? "bg-slate-800" : "bg-slate-50"} p-8 rounded-lg text-left`}>
+              <p className={`text-lg text-left ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}>
                 Seeking an opportunity as a fresh candidate to start my professional career.
               </p>
             </div>
@@ -231,12 +233,13 @@ export default function ResumePage() {
 
           {/* Footer */}
           <footer
-            className={`border-t ${isDarkMode ? "border-slate-700 text-slate-400" : "border-slate-200 text-slate-600"} pt-8 mt-12 text-center`}
+            className={`border-t text-left ${isDarkMode ? "border-slate-700 text-slate-400" : "border-slate-200 text-slate-600"} pt-8 mt-12`}
           >
-            <p className="text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+            <p className="text-sm text-left">Last updated: {new Date().toLocaleDateString()}</p>
           </footer>
         </div>
       </div>
     </main>
   )
 }
+
